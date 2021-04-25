@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+<title>Test en Javascript</title>
+<script type= "text/javascript">
+var nombre=prompt("Digite su nombre");
+</script>
+<script language="JavaScript" type="text/javascript">
+function avisoreset(){
+if(confirm("!ATENCION.Los datos del test se van a reiniciar"))
+document.cuestionario.reset();
+parent.location.reload();
+}
+
+var pregunta1="0";
+var pregunta2="0";
+var pregunta3="0";
+var pregunta4="0";
+var pregunta5="0";
+var pregunta6="0";
+var pregunta7="0";
+var pregunta8="0";
+var pregunta9="0";
+var pregunta10="0";
+function respuesta1(valor) {pregunta1 = valor};
+function respuesta2(valor) {pregunta2 = valor};
+function respuesta3(valor) {pregunta3 = valor};
+function respuesta4(valor) {pregunta4 = valor};
+function respuesta5(valor) {pregunta5 = valor};
+function respuesta6(valor) {pregunta6 = valor};
+function respuesta7(valor) {pregunta7 = valor};
+function respuesta8(valor) {pregunta8 = valor};
+function respuesta9(valor) {pregunta9 = valor};
+function respuesta10(valor) {pregunta10 = valor};
+//--></script>
+</head>
+
+<body onload="alert('Bienvenido al testde conocimiento matem&aacute;ticos\n\nSeleccione las respuestas que crea correctas teniendo en cuenta las siguientes consideraciones:\n\n1.-Los aciertos tienen puntuaciones variables en funci&oacute;n de la dificultad de la pregunta.\n2.- Las preguntas no contestadas ni suman ni restan puntos.\n3.-Las respuestas equivocadas restan m&aacute;s o menos puntos en funci&oacute;n del tipo de fallo.\n\nNota:\nEl test que va a realizar a continuaci&oacute;n carece de rigor\'cient&iacute;fico\'.&Uacute;nicamente \nse utiliza para mostrar una posibilidad m&aacute;s de la programaci&oacute;n en JavaScript.\nGRACIAS')">
+    <section id="sec1">
+        <font color="fuchsia">
+            <input type="radio" id="btn1" name="es_el_fon" value="fondo_dd" onclick="cambiar1()" />
+            <input type="radio" name="es_el_fon" value="fondo_dd"  onclick="cambiar2()"/>
+            <input type="radio" name="es_el_fon" value="fondo_dd"  onclick="cambiar3()" />
+            <input type="radio" name="es_el_fon" value="fondo_dd"  onclick="cambiar4()" />
+           
+        </font>
+    <center><p>
+<h1>Test de pruebas psicotecnicas</h1><br/>
+</p></center>
+
+<center><form name="cuestionario" id="cuestionario" action="">
+<table width="600" border="1" align="center" bgcolor="White">
+<tr> <td width="600">
+<b><font color="Blue">1. tenemos 6 libros y 4 espacios en una estanteria ¿De cuantas formas posibles se pueden colocar?</font></b>
+<blockquote>
+<input type="radio" name="pregunta1" value="A" onclick="respuesta1('A')" />A. 36<br/>
+<input type="radio" name="pregunta1" value="B" onclick="respuesta1('B')" />B. 120<br/>
+<input type="radio" name="pregunta1" value="C" onclick="respuesta1('C')" /> C. 360<br/>
+<input type="radio" name="pregunta1" value="D" onclick="respuesta1('D')" /> D. 720<br/>
+</blockquote></td></tr>
+<tr><td><b>
+<font color="Blue">2.Hay 3 personas y 5 sillas en una clase ¿De cuantas formas posibles se pueden sentar ?</font></b>
+<blockquote>
+<input type="radio" name="pregunta2" value="A" onclick="respuesta2('A')" />A. 20<br/>
+<input type="radio" name="pregunta2" value="B" onclick="respuesta2('B')" />B. 60<br/>
+<input type="radio" name="pregunta2" value="C" onclick="respuesta2('C')" /> C. 120<br/>
+<input type="radio" name="pregunta2" value="D" onclick="respuesta2('D')" /> D. 25<br/>
+</blockquote></td></tr>
+<tr><td>
+<b><font color="Blue">3.Cuantos numeros de 2 cifras podemos obtener con los numeros 0,1,2,3,4,5</font></b>
+<blockquote>
+<input type="radio" name="pregunta3" value="A" onclick="respuesta3('A')" />A.36<br/>
+<input type="radio" name="pregunta3" value="B" onclick="respuesta3('B')" />B.25<br/>
+<input type="radio" name="pregunta3" value="C" onclick="respuesta3('C')" /> C.64<br/>
+<input type="radio" name="pregunta3" value="D" onclick="respuesta3('D')" /> D. 32<br/>
+</blockquote></td></tr>
+<tr><td>
+<b><font color="Blue">4.resolver el cubo por orden que corresponde la imagen.</font></b>
+<blockquote>
+<img id="1cu" src="cubos1/1cu.jpg">
+<br/>
+<input type="radio" name="pregunta4" value="A" onclick="respuesta4('A')" /><img id="1a" src="cubos1/1a.jpg">
+
+<input type="radio" name="pregunta4" value="B" onclick="respuesta4('B')" /><img id="1b"  src="cubos1/1b.jpg">
+<br/>
+<input type="radio" name="pregunta4" value="C" onclick="respuesta4('C')" /> <img id="1c"  src="cubos1/1c.jpg">
+
+<input type="radio" name="pregunta4" value="D" onclick="respuesta4('D')" /><img id="1d" src="cubos1/1d.jpg"><br/>
+</blockquote></td></tr>
+<tr><td>
+<b><font color="Blue">5.resolver el cubo por orden que corresponde la imagen.</font></b>
+<blockquote>
+    <img id="2cu" src="cubos2/2cu.jpg">
+    <br/>
+    <input type="radio" name="pregunta5" value="A" onclick="respuesta4('A')" /><img id="1a" src="cubos2/2a.jpg">
+    
+    <input type="radio" name="pregunta5" value="B" onclick="respuesta4('B')" /><img id="1b"  src="cubos2/2b.jpg">
+    <br/>
+    <input type="radio" name="pregunta5" value="C" onclick="respuesta4('C')" /> <img id="1c"  src="cubos2/2c.jpg">
+    
+    <input type="radio" name="pregunta5" value="D" onclick="respuesta4('D')" /><img id="1d" src="cubos2/2d.jpg"><br/>
+</blockquote></td></tr>
+<tr><td>
+<b><font color="Blue">6.resolver el cubo por orden que corresponde la imagen.</font></b>
+<blockquote>
+    <img id="3cu" src="cubos3/3cu.jpg">
+    <br/>
+    <input type="radio" name="pregunta6" value="A" onclick="respuesta4('A')" /><img id="1a" src="cubos3/3a.jpg">
+    
+    <input type="radio" name="pregunta6" value="B" onclick="respuesta4('B')" /><img id="1b"  src="cubos3/3b.jpg">
+    <br/>
+    <input type="radio" name="pregunta6" value="C" onclick="respuesta4('C')" /> <img id="1c"  src="cubos3/3c.jpg">
+    
+    <input type="radio" name="pregunta6" value="D" onclick="respuesta4('D')" /><img id="1d" src="cubos3/3d.jpg"><br/>
+</blockquote></td></tr>
+<tr><td>
+<b><font color="Blue">7.resolver el cubo por orden que corresponde la imagen.</font></b>
+<blockquote>
+    <img id="4cu" src="cubos4/4cu.jpg">
+    <br/>
+    <input type="radio" name="pregunta7" value="A" onclick="respuesta4('A')" /><img id="1a" src="cubos4/4a.jpg">
+    
+    <input type="radio" name="pregunta7" value="B" onclick="respuesta4('B')" /><img id="1b"  src="cubos4/4b.jpg">
+    <br/>
+    <input type="radio" name="pregunta7" value="C" onclick="respuesta4('C')" /> <img id="1c"  src="cubos4/4c.jpg">
+    
+    <input type="radio" name="pregunta7" value="D" onclick="respuesta4('D')" /><img id="1d" src="cubos4/4d.jpg"><br/>
+</blockquote></td></tr>
+<tr><td>
+<b><font color="Blue">8.resolver el cubo por orden que corresponde la imagen.</font></b>
+<blockquote>
+    <img id="5cu" src="cubos5/5cu.jpg">
+    <br/>
+    <input type="radio" name="pregunta8" value="A" onclick="respuesta4('A')" /><img id="1a" src="cubos5/5a.jpg">
+    
+    <input type="radio" name="pregunta8" value="B" onclick="respuesta4('B')" /><img id="1b"  src="cubos5/5b.jpg">
+    <br/>
+    <input type="radio" name="pregunta8" value="C" onclick="respuesta4('C')" /> <img id="1c"  src="cubos5/5c.jpg">
+    
+    <input type="radio" name="pregunta8" value="D" onclick="respuesta4('D')" /><img id="1d" src="cubos5/5d.jpg"><br/>
+</blockquote></td></tr>
+ <tr><td>
+ <b><font color="Blue">9.resolver el cubo por orden que corresponde la imagen.</font></b>
+<blockquote>
+    <img id="6cu" src="cubos6/6cu.jpg">
+    <br/>
+    <input type="radio" name="pregunta9" value="A" onclick="respuesta4('A')" /><img id="1a" src="cubos6/6a.jpg">
+    
+    <input type="radio" name="pregunta9" value="B" onclick="respuesta4('B')" /><img id="1b"  src="cubos6/6b.jpg">
+    <br/>
+    <input type="radio" name="pregunta9" value="C" onclick="respuesta4('C')" /> <img id="1c"  src="cubos6/6c.jpg">
+    
+    <input type="radio" name="pregunta9" value="D" onclick="respuesta4('D')" /><img id="1d" src="cubos6/6d.jpg"><br/>
+</blockquote></td></tr>
+<tr><td>
+ <b><font color="Blue">10.hay 5 perchas y 7 chaquetas ¿De cuantas formas posibles las podemos colocar.</font></b>
+<blockquote>
+    <input type="radio" name="pregunta10" value="A" onclick="respuesta4('A')" />35<br/>
+    <input type="radio" name="pregunta10" value="B" onclick="respuesta4('B')" />16.807<br/>
+    <input type="radio" name="pregunta10" value="C" onclick="respuesta4('C')" />2.520<br/>
+    <input type="radio" name="pregunta10" value="D" onclick="respuesta4('D')" />840<br/>
+</blockquote></td></tr>
+<tr><td bgcolor="#0d6078">
+<script language="JavaScript" type="text/javascript">
+function examinar()
+{
+puntuacion=0;
+nocontesta=0;
+contestadas=0;
+puntosmaximos=0;
+
+if(pregunta1!="0")
+{
+contestadas=contestadas+1
+puntosmaximos=puntosmaximos+2
+if(pregunta1=="A"){puntuacion=puntuacion+0}
+if(pregunta1=="B"){puntuacion=puntuacion+0}
+if(pregunta1=="C"){puntuacion=puntuacion+2}
+if(pregunta1=="D"){puntuacion=puntuacion-1}
+}
+else{nocontesta=nocontesta+1}
+if(pregunta2!="0")
+{
+contestadas=contestadas+1
+puntosmaximos=puntosmaximos+2
+if(pregunta2=="A"){puntuacion=puntuacion+0}
+if(pregunta2=="B"){puntuacion=puntuacion+2}
+if(pregunta2=="C"){puntuacion=puntuacion+0}
+if(pregunta2=="D"){puntuacion=puntuacion+0}
+}
+else{nocontesta=nocontesta+1}
+if(pregunta3!="0")
+{
+contestadas=contestadas+1
+puntosmaximos=puntosmaximos+2
+if(pregunta3=="A"){puntuacion=puntuacion+2}
+if(pregunta3=="B"){puntuacion=puntuacion+0}
+if(pregunta3=="C"){puntuacion=puntuacion+0}
+if(pregunta3=="D"){puntuacion=puntuacion+0}
+}
+else{nocontesta=nocontesta+1}
+if(pregunta4!="0")
+{
+contestadas=contestadas+1
+puntosmaximos=puntosmaximos+2
+if(pregunta4=="A"){puntuacion=puntuacion+0}
+if(pregunta4=="B"){puntuacion=puntuacion+2}
+if(pregunta4=="C"){puntuacion=puntuacion+0}
+if(pregunta4=="D"){puntuacion=puntuacion+0}
+}
+else{nocontesta=nocontesta+1}
+
+if(pregunta5!="0")
+{
+contestadas=contestadas+1
+puntosmaximos=puntosmaximos+2
+if(pregunta5=="A"){puntuacion=puntuacion+0}
+if(pregunta5=="B"){puntuacion=puntuacion+0}
+if(pregunta5=="C"){puntuacion=puntuacion+0}
+if(pregunta5=="D"){puntuacion=puntuacion+2}
+}
+else{nocontesta=nocontesta+1}
+
+if(pregunta6!="0")
+{
+contestadas=contestadas+1
+puntosmaximos=puntosmaximos+2
+if(pregunta6=="A"){puntuacion=puntuacion+0}
+if(pregunta6=="B"){puntuacion=puntuacion+0}
+if(pregunta6=="C"){puntuacion=puntuacion+2}
+if(pregunta6=="D"){puntuacion=puntuacion+0}
+}
+else{nocontesta=nocontesta+1}
+
+if(pregunta7!="0")
+{
+contestadas=contestadas+1
+puntosmaximos=puntosmaximos+2
+if(pregunta7=="A"){puntuacion=puntuacion+0}
+if(pregunta7=="B"){puntuacion=puntuacion+2}
+if(pregunta7=="C"){puntuacion=puntuacion+0}
+if(pregunta7=="D"){puntuacion=puntuacion+0}
+}
+else{nocontesta=nocontesta+1}
+if(pregunta8!="0")
+{
+contestadas=contestadas+1
+puntosmaximos=puntosmaximos+2
+if(pregunta8=="A"){puntuacion=puntuacion+0}
+if(pregunta8=="B"){puntuacion=puntuacion+0}
+if(pregunta8=="C"){puntuacion=puntuacion+0}
+if(pregunta8=="D"){puntuacion=puntuacion+2}
+}
+else{nocontesta=nocontesta+1}
+if(pregunta9!="0")
+{
+contestadas=contestadas+1
+puntosmaximos=puntosmaximos+2
+if(pregunta9=="A"){puntuacion=puntuacion+2}
+if(pregunta9=="B"){puntuacion=puntuacion+0}
+if(pregunta9=="C"){puntuacion=puntuacion+0}
+if(pregunta9=="D"){puntuacion=puntuacion+0}
+}
+else{nocontesta=nocontesta+1}
+if(pregunta10!="0")
+{
+contestadas=contestadas+1
+puntosmaximos=puntosmaximos+2
+if(pregunta10=="A"){puntuacion=puntuacion+0}
+if(pregunta10=="B"){puntuacion=puntuacion+0}
+if(pregunta10=="C"){puntuacion=puntuacion+2}
+if(pregunta10=="D"){puntuacion=puntuacion+0}
+}
+else{nocontesta=nocontesta+1}
+
+
+if(puntosmaximos!=0){
+indiceacierto=Math.round(100*(puntuacion/puntosmaximos))}
+else{indiceacierto=0}
+if(indiceacierto==100){
+mensaje="Muy BIEN."}
+if(indiceacierto<100&&indiceacierto>=75){
+mensaje="NOTABLE. "}
+if(indiceacierto<50&&indiceacierto>=25){
+mensaje="LO JUSTO."}
+if(contestadas==0){
+ mensaje="Por favor, conteste algunas preguntas del test.LISTILLO"}
+alert(nombre+"Su puntuacion es"+puntuacion+"." + "\n\nEl numero maximo de puntos que podia conseguir era de"+puntosmaximos+".\n\nHa dejado sin contestar"+nocontesta+".\n\nSu porcentaje de aciertos es de" +indiceacierto+"%.\n\n"+mensaje+".");
+}
+</script>
+<br/>
+<center>
+<input type="button" style="background:white" name="submit" value="Resultado del test" onclick="examinar()"/>
+<input type="button" style="background:white" name="Reset" value="Reiniciar test" onclick="avisoreset()"/>
+<input type="button" style="background:white" name="solucion" value="Respuestas correctas" onclick="alert('RESPUESTAS CORRECTAS\n\n1:C\n2:A,B\n3:B\n4:B\n5:A\n6:A\n7:C\n8:B,C,D\n9:A\n10:B')"/>
+</center>
+</td></tr>
+</table>
+</form>
+
+</section>
+        <script>
+            function cambiar1(){
+        
+                document.getElementById('sec1').style.backgroundImage="url(Imagenes/fzUl.gif)";
+            }
+            function cambiar2(){
+        
+        document.getElementById('sec1').style.backgroundImage="url(Imagenes/HAFq.gif)";
+    }
+    function cambiar3(){
+        
+        document.getElementById('sec1').style.backgroundImage="url(Imagenes/QP6m.gif)";
+    }
+    function cambiar4(){
+    
+        document.getElementById('sec1').style.backgroundImage="url(Imagenes/formas.gif)";
+    }
+        </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

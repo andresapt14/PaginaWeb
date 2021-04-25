@@ -1,0 +1,397 @@
+*{
+   border: 0;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+          
+
+
+background-image: url("Imagenes/architecture-buildings-city-cityscape-356286.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+   font-family: Times new roman;
+   text-align: center;
+   height: 1500px;
+   display: block;
+}
+
+#espacio{
+   
+   height: 30px;
+   text-align:center;
+   color: white;
+   padding: .3em;
+}
+
+header{
+   /* padding: .9em;*/ 
+    padding:0px 180px;  
+    
+ 
+}
+
+#contenedor{
+
+   height: 850px;
+   width: 970px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+h1{
+   
+   padding: .3em;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+
+
+
+.multimedia > audio > p{
+   font-size: 10px;
+}
+
+.navegacion{
+   width: 90%;
+   height: 60px;
+   margin: auto;
+   background: #1DC997;
+   border-radius: 60px;
+   box-shadow: 0 5px 5px #ccc;
+   transition: all 0.2s ease-in-out;
+   text-align: center;
+   padding: .2em;
+}
+
+nav{
+   margin: 30px auto;
+   padding: .3em;
+   text-align: center;
+}
+
+.navegacion ul{
+   list-style: none;
+   padding: .3em;
+}
+
+
+
+#menu ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+
+}
+
+#menu #item{
+ float:left; 
+  
+}
+
+#menu #item a{
+ background-color:#000000; 
+ color: white;              
+ padding:17px 40px;      
+ display:block;  
+ font-size: 16px; 
+ text-decoration:none; 
+ 
+}
+
+#menu #submenu1{
+ /* ocultar el submenu */ 
+ display:none;
+ /* cada item no se corra al mover el mouse y pase por cada uno de ellos */ 
+    /*position:absolute;*/
+  
+    
+}
+
+#menu #item:hover #submenu1{
+/* aparesca el submenu */ 
+  display:block;
+  height: auto;
+  width:auto;
+
+    position:relative;
+}
+
+#menu #item a:hover{
+/* cuando se mueva el mouse sobre el menu cada item cambia a un color mas claro */ 
+  background: #01DFD7;
+  transition: all 0.2s ease-in-out; 
+}
+
+
+
+#multimedia p{
+   color: white;
+   
+}
+ 
+/*height 159*/
+ 
+
+header{
+   width: 850px;
+   height: 158px;
+
+
+}
+
+#audio{
+
+   height: 180px;
+   text-align: left;
+   display:inline-block;
+  
+  
+}
+
+audio{
+ 
+   width: 700px;
+   height: 50px;
+   padding: .3em;
+  display:inline-block;
+  margin-left:120px;
+}
+
+#audio #audio1{
+     width: 400px;
+     height: 50px;
+     display:inline-block;
+}
+
+
+/*primera parte*/
+
+
+
+#lista2{
+   background: white;
+   height: 290px;
+   text-align:left;
+   color: black;
+   
+}
+
+#lista2 iframe{
+    margin:10px;
+    
+}
+
+
+#lista3{
+   
+   height: 20px;
+   text-align:center;
+   color: white;
+   padding: .3em;
+}
+
+
+
+#lista3 #juego9{
+   background-color: black;
+   height: 180px;
+   width: 190px;
+   text-align:center;
+   display: inline-block;
+}
+
+
+#lista4{
+   
+   height: 220px;
+   text-align:right;
+   color: white;
+   padding: .3em;
+}
+
+
+#lista4 #gif1{
+   
+   height: 180px;
+   width: 190px;
+   text-align:center;
+   display: inline-block;
+ margin-right:50px;
+}
+
+#lista4 #gif2{
+  
+   height: 180px;
+   width: 190px;
+   text-align:center;
+   display: inline-block;
+ margin-right:50px;
+}
+
+#lista4 #gif3{
+ 
+   height: 180px;
+   width: 190px;
+   text-align:center;
+   display: inline-block;
+ margin-right:50px;
+}
+
+#lista4 #gif4{
+   
+   height: 180px;
+   width: 190px;
+   text-align:center;
+   display: inline-block;
+ margin-right:50px;
+}
+
+/*Tabla*/
+
+#lista5{
+    background-color: black;
+   height: 20px;
+   text-align:center;
+   color: white;
+   padding: .3em;
+}
+
+#tablero{
+ 
+   height: 450px;
+   text-align: center;
+   padding: .3em;
+}
+
+#tablero #TresTablas{
+  background: white;
+  text-align: center;
+  width: 620px;
+  height: 400px;
+
+}
+
+
+
+table{
+   background: #45b49c;
+   text-align: left;
+   border-style: solid;
+   margin-right: auto;
+   margin-left: auto;
+   margin: 10px;
+}
+
+td{
+   border: 1px solid Black;
+   color:white;
+}
+
+#listao{
+ 
+   height: 370px;
+   text-align:center;
+   color: white;
+   padding: .3em;
+}
+
+#listao img{
+    width: 300px;
+    height: 352px;
+}
+
+#listao #finanza_img{
+   background-color: black;
+   height: 352px;
+   width:352 px;
+   text-align:center;
+ margin-right:40px;
+   display: inline-block;
+}
+
+#listao #tablauno{
+   background-color: black;
+   height: 190px;
+   width: 195px;
+   text-align:center;
+   margin-right:10px;
+   display: inline-block;
+
+}
+
+
+#listaq{
+
+   height: 200px;
+   text-align:center;
+   color: white;
+   padding: .3em;
+display: inline-block;
+}
+
+#listaq img{
+    width: 158px;
+    height: 158px;
+display: inline-block;
+}
+
+#listaq #finanza1{
+
+   height: 190px;
+   width: 195px;
+   text-align:center;
+ margin-right:47px;
+   display: inline-block;
+
+}
+
+#listaq #finanza2{
+
+   height: 190px;
+   width: 195px;
+   text-align:center;
+ margin-right:40px;
+   display: inline-block;
+}
+
+
+#listaq #finanza3{
+
+   height: 190px;
+   width: 195px;
+   text-align:center;
+ margin-right:41px;
+   display: inline-block;
+}
+
+
+#listaq #finanza4{
+
+   height: 190px;
+   width: 195px;
+   text-align:center;
+    margin-right:40px;
+   display: inline-block;
+}
+
+
+
+
+
+footer{
+   background: antiquewhite;
+   height: 25px;
+   width: 970px;
+   text-align: center;
+}
+
+footer p{
+   font-family:'Calibri';
+   font-size: 10px;
+   text-align: center;
+}

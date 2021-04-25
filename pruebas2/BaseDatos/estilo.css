@@ -1,0 +1,39 @@
+body{
+background-image: url("Imagenes/architecture-buildings-city-cityscape-356286.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+  
+   text-align: left;
+   height: 500px;
+   display: block;
+}
+
+
+#contenido{
+  
+   height: 400px;
+   width: 1100px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+td{
+ background: #FFFFFF;
+
+}
+th{
+ background:#45b49c;
+}
+input{
+   height: 19px;
+   width: 100px;
+
+}
+
+input#email{
+   height: 19px;
+   width: 170px;
+
+}

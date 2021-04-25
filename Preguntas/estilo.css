@@ -1,0 +1,18 @@
+
+#blockquote #img {
+ margin-right:200px;
+
+}
+
+body{
+    background-image: url("Imagenes/architecture-buildings-city-cityscape-356286.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+      
+       text-align: left;
+       height: 500px;
+       display: block;
+    }
+    

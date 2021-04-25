@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta charset="keywords"content="Pagina,html5,css3">
+        <title>Proyecto Primer Corte</title>
+        <link rel="stylesheet" type="text/css" href="estilosproyecto1.css">
+    </head>
+    <body>
+        <section id="contenedor">
+           <section id="espacio">    
+            </section>
+            <header>
+              <section id="menu" >
+            <ul>
+            <li id="item"><a href="../index.html">Inicio</a></li>
+             <li id="item"><a href="#">productos</a> 
+               <ul id ="submenu1">
+                <li><a href="/Nomina/index.html">Nomina</a></li>
+              </ul>
+               </li>
+            <li id="item"><a href="#">Quienes Somos</a>
+              <ul id ="submenu1">
+                <li><a href="https://daniloajojoaa.wixsite.com/website">Proyecto Wixsite</a></li>
+                <li><a href="https://sites.google.com/view/exitotrabajoecci/p%C3%A1gina-principal">Costos W.google</a></li>
+               
+              </ul>
+             </li>
+                <li id="item"><a href="#">Contactanos</a>
+              <ul id ="submenu1">       
+                <li><a href="/Formulario/index.html">Formulario</a></li>
+              </ul>
+             </li>
+     </ul>
+        </section>
+            </header>
+
+<section id="contenido">
+<section id="audio">
+<article id="audio1"><br/><audio controls autoplay name="media"><source src="../Audios/El Vals del Obrero.mp3" type="audio/mp3"></audio></article>
+        </section>
+        <h1>PROGRAMA DE MANEJO DE DATOS</h1>
+        <br>
+        <table border="1">
+            <script type="text/JavaScript">
+            alert("Datos de Cliente");
+             var clave=prompt('Digite su clave de acceso');
+              if(clave==123){
+
+               var codigo=[];
+              var cedula=[];
+              var nombre=[];
+              var apellido=[];
+              var salario=[];
+              var diastrabajados=[];
+              var extradia=[];
+              var extranoch=[];
+              var extradiaf=[];
+              var extranochf=[];
+              
+              var a;
+              var b;
+              var c;
+              var d;
+              var e;
+              var f;     
+              var h;
+              var y;
+              var j;
+              var k;
+             var total;
+             var cont=0;
+             var acum=0;
+
+             for (var i=1;i<5;i++){
+                   a= prompt("Digite el codigo");
+                   codigo[i]=a;
+                   b=prompt("Digite la cedula");
+                   cedula[i]=b;
+                   c=prompt("Digite su nombre");
+                   nombre[i]=c;
+                   d=prompt("Digite su apellido");
+                   apellido[i]=d;
+                   e=prompt("Digite su salario");
+                   salario[i]=e;
+                   f=prompt("Digite sus dias trabajados");
+                   diastrabajados[i]=f;
+                     h=prompt("Digite cuantas horas extra Diuronos realizo");
+                    extradia[i]=h;
+                     y=prompt("Digite cuantas horas extra Nocturnos realizo");
+                    extranoch[i]=y;
+                     j=prompt("Digite cuantas horas extra Diurnos festivos realizo");
+                    extradiaf[i]=j;
+                     k=prompt("Digite cuantos horas extra nocturnos festivos realizo");
+                    extranochf[i]=k;
+          }
+              document.write("<tr>");
+              document.write("<td>"+'Codigo'+"</td>");
+              document.write("<td>"+'Cedula'+"</td>");
+              document.write("<td>"+'Nombres'+"</td>");
+              document.write("<td>"+'Apellidos'+"</td>");
+              document.write("<td>"+'Salario'+"</td>");
+              document.write("<td>"+'Dias Trabajados'+"</td>");
+              document.write("<td>"+'Valor Dia'+"</td>");
+              document.write("<td>"+'salud'+"</td>");
+              document.write("<td>"+'pension'+"</td>");
+              document.write("<td>"+'transporte'+"</td>");
+              document.write("<td>"+'Hora E.Diurna'+"</td>");
+              document.write("<td>"+'Hora E.Nocturna'+"</td>");
+              document.write("<td>"+'Hora E.Festiva-Diurna'+"</td>");
+              document.write("<td>"+'Hora E.Festiva-Diurna'+"</td>");
+              document.write("<td>"+'salarionet'+"</td>");
+              document.write("</tr>");
+      
+   
+
+              for (var i=1;i<=4;i++){
+                if(salario[i]<=1960000){
+                var salarionet;
+                var transporte=102854;
+                var extrauno=4571;
+                var extrados=6400;
+                var extratres=7314;
+                var extracuatro=9142;
+                var mes =30; 
+                var total= parseInt(salario[i])/mes;
+                var total3 =parseInt(extradia[i])*extrauno;
+                var total4 =parseInt(extranoch[i])*extrados;
+                var total5 =parseInt(extradiaf[i])*extratres;
+                var total6 =parseInt(extranochf[i])*extracuatro;
+                
+                var total2= parseInt(diastrabajados[i])*total+transporte+total3+total4+total5+total6;
+
+                document.write("<tr>");
+                document.write("<td>"+codigo[i]+"</td>");
+                document.write("<td>"+cedula[i]+"</td>");
+                document.write("<td>"+nombre[i]+"</td>");
+                document.write("<td>"+apellido[i]+"</td>");
+                document.write("<td>"+salario[i]+"</td>");
+                document.write("<td>"+diastrabajados[i]+"</td>");
+                document.write("<td>"+Math.trunc(total)+"</td>");
+                document.write("<td>"+'4%'+"</td>");
+                document.write("<td>"+'4%'+"</td>");
+                document.write("<td>"+transporte+"</td>");
+                document.write("<td>"+total3+"</td>");
+                document.write("<td>"+total4+"</td>");
+                document.write("<td>"+total5+"</td>");
+                document.write("<td>"+total6+"</td>");           
+                document.write("<td>"+Math.trunc(total2)+"</td>");
+      
+ 
+
+                 }
+   
+            else{
+                var extrauno=4571;
+                var extrados=6400;
+                var extratres=7314;
+                var extracuatro=9142;
+                var mes =30; 
+                var total= parseInt(salario[i])/mes;
+                var total3 =parseInt(extradia[i])*extrauno;
+                var total4 =parseInt(extranoch[i])*extrados;
+                var total5 =parseInt(extradiaf[i])*extratres;
+                var total6 =parseInt(extranochf[i])*extracuatro;
+                var total2= parseInt(diastrabajados[i])*total+total3+total4+total5+total6;
+               
+   
+                document.write("<tr>");
+                document.write("<td>"+codigo[i]+"</td>");
+                document.write("<td>"+cedula[i]+"</td>");
+                document.write("<td>"+nombre[i]+"</td>");
+                document.write("<td>"+apellido[i]+"</td>");
+                document.write("<td>"+salario[i]+"</td>");
+                document.write("<td>"+diastrabajados[i]+"</td>");
+                document.write("<td>"+Math.trunc(total)+"</td>");
+                document.write("<td>"+'4%'+"</td>");
+                document.write("<td>"+'4%'+"</td>");
+                document.write("<td>"+'No'+"</td>");
+                document.write("<td>"+total3+"</td>");
+                document.write("<td>"+total4+"</td>");
+                document.write("<td>"+total5+"</td>");
+                document.write("<td>"+total6+"</td>"); 
+                document.write("<td>"+Math.trunc(total2)+"</td>");
+
+          }
+
+          } 
+               
+              }
+             else{
+             alert('Clave incorrecta porque es 123');
+             }
+            </script>
+        </table>
+        <br/>
+        <hr width="100%">
+        <br/>
+
+
+</section>
+</section>
+
+    </body>
+</html>

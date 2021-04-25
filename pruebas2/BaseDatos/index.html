@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Bases de Datos Finimak</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.2.3/firebase-firestore.js"></script>
+       
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+      
+    </head>
+    <body>
+        
+        <div>
+            <section id="contenido">
+
+            <br>
+            <br>
+            <h1>Usuarios Finimak</h1>
+            <input type="text" id="nombres" placeholder="Nombres">
+            <input type="text" id="apellidos" placeholder="Apellidos">
+            <input type="text" id="cedula" placeholder="Cedula">
+            <input type="text" id="telefono" placeholder="Telefono">
+            <input type="text" id="email" placeholder="Email">
+            <input type="text" id="salario" placeholder="Salario">
+            <input type="text" id="diastrabajado" placeholder="Diastrabajado">
+            <input type="text" id="resultado" placeholder="Resultado">
+            
+             
+              </br>
+             </br>
+            <button class="btn btn-primary btn-sm" id="boton" onclick="guardar()"><i class="fas fa-plus-circle"></i>Guardar</button>
+            <br>
+            <br>
+            
+            <table class="table table-sm"> 
+                <thead>
+                    <tr>
+                        <th>Identificación</th>
+                        <th>Nombres</th>
+                        <th>Apellidos</th>
+                        <th>Cedula</th>
+                        <th>Telefono</th>
+                        <th>Email</th>
+                        <th>Salario</th>
+                        <th>D Work</th>
+                        <th>Total</th>           
+                        <th>Eliminar</th>
+                        <th>Editar</th>
+                </thead>
+                <tbody id="tabla">
+                </tbody>
+            </table>
+        </section>
+        </div>
+    </body>
+    <script src="ElectJavsc.js"></script>
+</html>
+
+
+    

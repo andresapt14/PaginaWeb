@@ -1,0 +1,166 @@
+*{
+   border: 0;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+          
+
+
+background-image: url("../Imagenes/architecture-buildings-city-cityscape-356286.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+	background-size: cover;
+        font-family: Times new roman;
+        text-align: center;
+        height: 900px;
+        display: block;
+}
+
+#espacio{
+   
+   height: 30px;
+   text-align:center;
+   color: white;
+   padding: .3em;
+}
+
+header{
+   /* padding: 190*/ 
+    padding:0px 250px;  
+    
+ 
+}
+
+#contenedor{
+
+   height: 850px;
+   width: 970px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+#contenido{
+  background: #E1E1E1;
+   height: 400px;
+   width: 1100px;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+
+h1{
+   
+   padding: .3em;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+
+
+
+.multimedia > audio > p{
+   font-size: 10px;
+}
+
+.navegacion{
+   width: 90%;
+   height: 60px;
+   margin: auto;
+   background: #1DC997;
+   border-radius: 60px;
+   box-shadow: 0 5px 5px #ccc;
+   transition: all 0.2s ease-in-out;
+   text-align: center;
+   padding: .2em;
+}
+
+nav{
+   margin: 30px auto;
+   padding: .3em;
+   text-align: center;
+}
+
+.navegacion ul{
+   list-style: none;
+   padding: .3em;
+}
+
+
+
+#menu ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+
+}
+
+#menu #item{
+ float:left; 
+  
+}
+
+#menu #item a{
+ background-color:#000000; 
+ color: white;              
+ padding:17px 40px;      
+ display:block;  
+ font-size: 16px; 
+ text-decoration:none; 
+ 
+}
+
+#menu #submenu1{
+ /* ocultar el submenu */ 
+ display:none;
+ /* cada item no se corra al mover el mouse y pase por cada uno de ellos */ 
+    /*position:absolute;*/
+  
+    
+}
+
+#menu #item:hover #submenu1{
+/* aparesca el submenu */ 
+  display:block;
+  height: auto;
+  width:auto;
+
+    position:relative;
+}
+
+#menu #item a:hover{
+/* cuando se mueva el mouse sobre el menu cada item cambia a un color mas claro */ 
+  background: #01DFD7;
+  transition: all 0.2s ease-in-out; 
+}
+
+
+
+#multimedia p{
+   color: white;
+   
+}
+ 
+
+ 
+
+header{
+   width: 850px;
+   height: 158px;
+
+}
+
+table {
+  background: #45b49c;
+  border: black 2px solid;
+}
+
+td{
+   border: 1px solid Black;
+   color:black;
+}
+
+
+
